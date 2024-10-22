@@ -1,0 +1,107 @@
+@import '../../App.scss'; 
+
+.Header{
+    width: 100%;
+    height: 25vh;
+    @include flex(space-around);
+    position: fixed;
+    background-color: $white;
+    z-index: 999;
+
+    .Header_Left{
+        .Header_Left_Part2{
+            margin-top: 15px;
+            ul{
+                display: flex;
+
+                li{
+                    animation: Ani1 2s linear infinite alternate;
+                    list-style-type: none;
+                    margin: {
+                        right: 15px;
+                    }
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    img:hover{
+                        transform: scale(1.2);
+                        transition: 1s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    .Header_Right{
+
+        .List{
+            display: flex;
+
+            li{
+                list-style-type: none;
+                margin: {
+                    right: 37px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $BlackNormal;
+                    font-size: $Display7;
+                }
+                a:hover{
+                    color: $blueNormal;
+                }
+            }
+            .CloseImg{
+               display: none;
+            }
+        }
+        .ListImg{
+            width: 36px;
+            height: 36px;
+            margin-right: 15px;
+            display: none
+        }
+
+    }
+
+}
+@include Ani1();
+
+@media (max-width: 768px) {
+
+ .Header_Right{
+    .List{
+        display: none !important;
+    }    
+    .Open{
+        background-color: $white;
+        position: absolute;
+        top: 150px;
+        right: -10px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+        li{
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+    .CloseImg{
+        display: block !important;
+    }
+    .ListImg{
+        display: block !important;
+    }
+
+}
+}

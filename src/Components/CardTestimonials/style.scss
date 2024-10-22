@@ -1,0 +1,21 @@
+.CardTestimonials{
+    width: 325px;
+    min-height: 421px;
+    background-color: #FFE4B5;
+    border: 3px solid #F266AB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h2{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+}

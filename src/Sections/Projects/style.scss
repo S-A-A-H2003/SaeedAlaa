@@ -1,0 +1,73 @@
+@import '../../App.scss';
+
+.Projects{
+    width: 100%;
+    min-height: 50vh;
+    background-color: $white;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .Projects_Top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .Projects_Top_Part1{
+            margin-bottom: 30px;
+            font-size: $Display2;
+        }
+
+        .Projects_Top_Part2{
+            margin-bottom: 20px;
+            font-size: $Display7;
+            text-align: center;
+        }
+
+        button{
+            margin: {
+                right: 15px;
+                bottom: 5px;
+            }
+            font-size: $Display8;
+
+            a{
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        .Button{
+            animation: Ani2 2s linear infinite alternate;
+        }
+    }
+
+
+}
+
+@include Ani2();
+
+@media (max-width: 1016px) {
+    .Projects{
+        .Projects_Top{
+            .Button{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 613px) {
+    .Projects{
+        .Projects_Top{
+            .Button{
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+    
+    }
+}

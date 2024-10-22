@@ -1,0 +1,47 @@
+@import '../../App.scss';
+.Contact{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $white;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Contact_Part1{
+        margin-bottom: 30px;
+        font-size: $Display2;
+        text-align: center;
+    } 
+
+    .Contact_Part2{
+        margin-bottom: 30px;
+        font-size: $Display7;
+        text-align: center;
+    } 
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        input{
+            width: 300px;
+            height: 40px;
+            padding: 5px;
+            margin: {
+                bottom: 15px;
+            }
+        }
+
+        textarea{
+            width: 300px;
+            height: 100px;
+            padding: 5px;
+            margin: {
+                bottom: 15px;
+            }
+        }
+    }
+      
+}

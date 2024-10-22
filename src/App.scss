@@ -1,0 +1,58 @@
+    
+$white:#FFFFFF;   
+$BlackNormal:#000000;
+$blueNormal:#2CD3E1;
+$YellowNormal:#FFE4B5;
+$VioletNormal:#A459D1;
+
+$Display1: 69px;
+$Display2: 55px;
+$Display3: 44px;
+$Display4: 35px;
+$Display5: 28px;
+$Display6: 23px;
+$Display7: 18px;
+$Display8: 14px;
+$Display9: 12px;
+
+@mixin flex($justify-content){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+}
+
+@mixin Ani1(){
+    @keyframes Ani1{
+        0%{
+          transform: translateY(0px);
+        }
+        100%{
+          transform: translateY(-10px);
+        }
+    }
+}
+
+@mixin Ani2(){
+    @keyframes Ani2{
+        0%{
+          transform: translatex(0px);
+        }
+        100%{
+          transform: translatex(-10px);
+        }
+    }
+}
+
+@mixin Ani3(){
+    @keyframes Ani3{
+        100%{
+          transform:rotate(-180 deg);
+        }
+        100%{
+          transform: rotatey(180 deg);
+        }
+    }
+}
+@mixin Ani4(){
+    @keyframes Ani4 {to{transform: rotate(2turn)}} 
+}
